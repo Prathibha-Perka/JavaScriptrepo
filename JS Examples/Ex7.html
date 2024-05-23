@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> drawbacks of var keyword</title>
+    </head>
+    <body>
+        <script>
+            var age = 23
+            console.log(age)
+
+            // redclaring
+            var age = 23
+            console.log(age)
+
+            //hoisting
+            height=5.6;
+            console.log(height)
+                var height;
+
+                //var cannot have block level scope
+                function doSomeThing()
+                {
+                    var x=99
+                    console.log(x);
+                    if(x>0)
+                    {
+                        var y =999;
+                    }
+                    console.log(y)
+                }
+                doSomeThing()
+    
+        </script>
+    </body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Default parameters</title>
+</head>
+
+<body>
+    <script>
+        function addition(a = 1, b = 2, c = 3, d = 4) {
+            console.log(a + b + c + d)
+        }
+        addition()
+        addition(100);
+        addition(23, 45);
+        addition(89, 67, 87)
+        //if we wont pass any values the  default values will be considered those are undefined and addition of undefined is NaN(not a value)
+
+    </script>
+
+</body>
+
+</html>

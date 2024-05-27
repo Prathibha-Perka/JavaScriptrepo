@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Nested functions</title>
+    </head>
+    <body>
+        <script>
+             function one()
+             {
+                x=10
+                console.log(`inside one : x= ${x}`);
+                function two()
+                {
+                    y=100
+                    console.log(`inside one : x= ${x}, y = ${y}`);
+                    function three()
+                    {
+                        z=1000
+                        console.log(`inside one : x= ${x}, y = ${y}, z = ${z}`);
+                    }
+                    three()
+                }
+                two()
+             }
+             one()
+        </script>
+    </body>
+</html>

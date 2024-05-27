@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> inner Functions</title>
+    </head>
+    <body>
+        <script>
+          
+            function cube(n)
+            {
+                function square(n)
+            {
+                return n*n
+            }
+                return square(n)*n
+            }
+            let r= cube(5)
+            console.log(r)
+        </script>
+    </body>
+</html>

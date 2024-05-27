@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> == vs ===</title>
+    </head>
+    <body>
+        <script>
+            console.log(10 == 10)
+            console.log(10 === 10)  
+            // left: number    right:string
+            //== ignore the datatype
+            //== necessary coversions
+            console.log(10 == '10')
+            //=== consider the datatype
+            //=== no necessary conversion
+            console.log(10 === '10')
+            console.log(true == true)
+            console.log(true == 'true') // 'true' will be converted as 1
+            console.log(true === 'true')
+            console.log(true == 1)
+        </script>
+    </body>
+</html>

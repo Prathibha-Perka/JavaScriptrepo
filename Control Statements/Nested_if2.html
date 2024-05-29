@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Nested If Example 2</title>
+</head>
+
+<body>
+    <script>
+        let lightColor = "Green";
+        let isPedestraianWaiting = true;
+        if ("Green" == lightColor) {
+            if (isPedestraianWaiting) {
+                console.log("Slow Down");
+            } else {
+                console.log("Drive");
+            }
+        }else if ("Yellow" == lightColor){
+            console.log("Prepare to Stop");
+        } else if ("Red" == lightColor){
+            console.log("Stop");
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Nested If Statement Example</title>
+    </head>
+    <body>
+        <script>
+            let totalMarks = 480;
+            let perc = (totalMarks / 500) * 100;
+            let garde;
+            if ( perc >=80){
+                garde = "A+";
+            }
+            else if ((perc >= 70) && (perc <80)){
+                grade = "A";
+            }
+            else if ((perc >=60) && (perc <70)){
+                garde = "B";
+            }
+            else{
+                grade = "B";
+            }
+            console.log("The percentage of the student is :" + perc);
+            console.log("The grade of the student is :" + grade);
+        </script>
+    </body>
+</html>

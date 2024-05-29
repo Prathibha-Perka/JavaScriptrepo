@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Cart Items Example</title>
+    </head>
+    <body>
+        <script>
+             let cartItems=[];
+
+             // adding array elements from ending
+            // cartItems.push("Nons")
+            // cartItems.push("Butter Chicken")
+            // cartItems.push("Biriyani")
+            // cartItems.push("iceCream")
+            // cartItems.pop()
+            // console.log(cartItems);
+
+
+
+            // adding elements from front 
+
+
+            cartItems.unshift("Nons")             // 0-Nons
+            cartItems.unshift("Butter Chicken")   // 0-Butter Chicken, 1- Nons
+            cartItems.unshift("Biriyani")         // 0-Biriyani, 1-Butter Chicken, 2- Nons
+            cartItems.unshift("iceCream")         // 0- icsCream 1-Biriyani, 2-Butter Chicken, 3- Nons 
+            cartItems.shift()                     // 0 - iceCream
+            cartItems.pop('Nons');
+            console.log(cartItems);
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title>task for object</title>
+    </head>
+    <body>
+        <script>
+            let Employee = {
+                id : 101,
+                name: { firstName : 'perka' , lastName : 'Prathibha'},
+                salary: 60000,
+                experience: [
+                                { company :'Accenture' , years: 3},
+                                { company:'Infosys', years: 4},
+                                {company: 'techM', years: 6}
+                             ],
+                accounts:   [
+                                {bankName: 'SBI' , accno: 1234,isfc:'XXX'},
+                                {bankName: 'SBH' , accno: 5678,isfc:'YYY'},
+                                {bankName: 'DGB' , accno: 9012,isfc:'ZZZ'},
+                            ]
+            }
+
+            // Accessing employee details
+            console.log(Employee);
+
+            //Accessing employee salary
+            console.log(Employee.salary);
+
+            //Accessing employee experience
+            console.log(Employee.experience);
+
+            //Accessing employee experience in infosys
+            console.log(Employee.experience[1]);
+
+            //Accessing employee accounts
+            console.log(Employee.accounts);
+
+            //accessing individual accounts 
+            console.log(Employee.accounts[0]);
+            console.log(Employee.accounts[1]);
+            console.log(Employee.accounts[2]);
+        </script>
+    </body>
+</html>

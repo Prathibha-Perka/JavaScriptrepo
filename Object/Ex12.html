@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> const keyword for the array and objects</title>
+    </head>
+    <body>
+        <script>
+            //ARRAY
+            // using const array can be modified 
+            const a =[1,2,3]
+            a[0] =1000
+            console.log(a);
+           
+           //using const array cannot be replaced
+            a=[4,5,6]
+            console.log(a);
+
+            //OBJECT
+            //using const object can be modified
+            const b = { fruit1: 'banana', fruit2:'apple'};
+            b.fruit1 = 'Mango'
+            console.log(b);
+
+            //using const object cannot be replaced
+            b={id: 1,name:'Raj'}
+            console.log(b);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Rest parameter</title>
+    </head>
+    <body>
+        <script>
+            function total(...subjects)
+            {
+                let r=subjects.reduce((a,b) => a+b);
+                return r;
+            }
+            let r=total(12,23,64,85,34,67,23,78,97,25);
+            console.log(r);
+             r=total(12,25);
+            console.log(r);
+             r=total(12,67,23,78,97,25);
+            console.log(r);
+
+        </script>
+    </body>
+</html>

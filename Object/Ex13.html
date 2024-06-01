@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> fields and fumctions inside the object</title>
+    </head>
+    <body>
+        <script>
+let human ={
+    name: 'Ajay',
+    age: 17,
+    height: 5.6,
+    weight:45,
+    hobbies: ['singing','dancing'],
+
+
+    eating: function(){
+        console.log("human loves eating biriyani");
+    },
+    sleeping : function(){
+        console.log("human loves sleeping 9hrs in a day");
+    },
+    walking: function(){
+        console.log("human loves 2km walking in a day ");
+    }
+}   
+console.log(human.name,human.age,human.hobbies);  //Accessing fields
+human.eating()    //Accesing functions
+human.sleeping()
+human.walking()
+</script>
+    </body>
+</html>

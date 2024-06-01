@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>object inside object </title>
+</head>
+
+<body>
+    <script>
+        let student = {
+            id: 1,
+            marks: 560,
+            hobbies: ['reading books', 'swimming'],
+            phonenumber: [9989739371, 7675002565],
+            name: {
+                             firstname: 'james',
+                             middlename: 'bond',
+                                 lastname: 'xyz'
+                 },
+            address: {
+                              doorNumber: 221,
+                                street: 'sirpur',
+                              city: 'nizamabad',
+                              pincode: 503230,
+                                 location: {
+                                                 lat: 12.34,
+                                                 lan: 45.66
+                                             }
+                     }
+
+        };
+console.log(student);
+
+        // Accessing array elements
+        console.log(student.hobbies);
+
+        //Accessing individual elements from array
+        console.log(student.hobbies[0]);
+        console.log(student.hobbies[1]);
+
+        //Accessing name property
+        console.log(student.name);
+
+        //Accessing last name
+        console.log(student.name.lastname);
+
+        //Accessing address
+        console.log(student.address);
+
+        //Accessing pincode
+        console.log(student.address.pincode);
+
+        //Accessing lat
+        console.log(student.address.location.lat);
+    </script>
+</body>
+
+</html>

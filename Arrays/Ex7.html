@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Advance JavaScript Functions</title>
+</head>
+
+<body>
+    <script>
+        let salaries = [12000, 34000, 56000, 20000, 80000]
+        // Requirment1 : prtint sum of Salaries
+        let sum = salaries.reduce((a, b) => a + b);  // a=12000 , b=34000 => a+b=12000+3400=46000 stores in a
+        console.log(sum);
+
+        // Requirement2 : prepare a new array with salaries whose salaries is below 50,000
+        let below50k = salaries.filter(salary => salary < 50000)
+        console.log(below50k);
+
+
+        // Requirement3 : check whether the every salary is above 50000 are not
+        let everyResult = salaries.every(salary=> salary < 50000)
+        console.log(everyResult);
+
+
+        // Requirement4 : check whether the some of the salaries are above 50000 are not
+        let someResult = salaries.some(salary => salary < 50000)
+        console.log(someResult);
+
+        // Requirement5 : prepare a new array with salaries by adding 3000 as bonus
+        let newSalaries = salaries.map(salary => salary + 3000);
+        console.log(newSalaries);
+    </script>
+</body>
+
+</html>

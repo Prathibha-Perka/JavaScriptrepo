@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Nested functions</title>
+</head>
+
+<body>
+    <script>
+
+
+        function percentage(s1, s2, s3) {
+            function average(s1, s2, s3) {
+                function total(s1, s2, s3) {
+                    return (s1 + s2 + s3)
+                }
+                return (total(s1, s2, s3)) / 3
+            }
+            return (average(s1, s2, s3)) * 100
+
+        }
+        let r = percentage(300,400,500);
+        console.log(r);
+    </script>
+</body>
+
+</html>

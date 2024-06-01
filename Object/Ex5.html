@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Add a new property to the existing object</title>
+    </head>
+    <body>
+        <script>
+             let student = { 'id': 1, 'marks': 230, 'first Name': 'James', 'last Name': 'Gosling'};
+             
+             
+             //Adding a new property to the object
+             student['age']=22;
+
+            // Adding duplicate property
+             student['marks']= 239;
+
+             //Checking key is exist or not
+             if('last Name' in student){
+                console.log('key is already exist');
+             }
+             else{
+                student['last Name']= Bond;
+             }
+             if('city' in student){
+                console.log('key is already exist');
+             }
+             else{
+                student['city']= 'HYD';
+             }
+
+
+             //deletinga property
+             delete student['marks']
+             console.log(student);
+        </script>
+    </body>
+</html>

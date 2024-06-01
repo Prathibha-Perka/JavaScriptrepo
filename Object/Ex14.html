@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> </title>
+    </head>
+    <body>
+        <script>
+            let human ={
+    name: 'Ajay',
+    age: 17,
+
+
+    eating: function(){
+        console.log( this.name, " loves eating biriyani");
+    },
+    sleeping : function(){
+        console.log(this.name, "loves sleeping 9hrs in a day");
+    },
+    walking: function(){
+        console.log( this.name, " loves walking 2km in a day ");
+    }
+}   
+console.log(human.name,human.age,human.hobbies);  //Accessing fields
+human.eating()    //Accesing functions
+human.sleeping()
+human.walking()
+        </script>
+    </body>
+</html>

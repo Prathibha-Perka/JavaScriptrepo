@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> array functions</title>
+</head>
+
+<body>
+    <script>
+        let salaries = [12000, 34000, 56000, 65000, 78000]
+
+        // Access/Fetch element by element in array
+        // approach 1 :  for loop
+        for (let i = 0; i < salaries.length; i++) {
+            salaries[i] = salaries[i]+1000;
+            console.log(salaries[i]);
+        }
+
+
+
+        // approach 2 : for of loop
+        for(let salary of  salaries){
+            salary=salary+1000;
+            console.log(salary);
+        }
+
+
+
+        // approach 3 : forEach() method
+        salaries.forEach( (salary)=> {
+            console.log(salary);
+        })
+
+    </script>
+</body>
+
+</html>

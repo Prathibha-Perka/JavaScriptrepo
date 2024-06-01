@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> example for splice</title>
+    </head>
+    <body>
+        <script>
+// splice(): Add and Remove elements
+// syntax: splice(p1,p2,p3,p4,p5,p6.....)
+// create an array with name months
+
+
+let months=[]
+// add jan,feb,mar month numbers in the beginning of the array
+months.splice(0,0,'jan','feb','mar')
+console.log(months)
+
+//add april,may month after the 2nd index
+months.splice(3,0,'april','may')
+    console.log(months);
+
+    
+//add dupapril,dupmay month after the 4th index
+months.splice(5,0,'dupapril','dupmay')
+    console.log(months);
+
+// remove first 2 month names
+months.splice(0,2);
+console.log(months);
+
+// remove last 2 month names
+months.splice(3,2);
+console.log(months);
+
+// add one,two,three month names and delete mar,april,may months
+months.splice(0,3,'one','two','three');
+console.log(months);
+months.splice(1,1,'four');
+console.log(months);
+
+
+
+        </script>
+    </body>
+</html>

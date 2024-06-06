@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Addition application using internal js(preparing JS code inside the html code) </title>
+    </head>
+    <body>
+        <label> First Number</label>
+        <input type="text" id="t1" value="100">
+        <br><br>
+        <label> Second Number</label>
+        <input type="text" id="t2" value="200">
+        <br><br>
+        <!-- <input type="button" value="+"> -->
+        <!-- OR -->
+        <button onclick="dosum()"> +</button>
+        <input type="text" id="t3">
+        <br><br>
+        <button onclick="eraseDate()">Clear</button>
+        <!-- DOM manipulation -->
+        <script>
+            function dosum(){
+            let x=document.getElementById('t1').value
+            let y=document.getElementById('t2').value
+            let sum=eval(x)+eval(y);
+            let z=document.getElementById('t3').value=sum
+            }
+            function eraseDate(){
+                document.getElementById('t1').value=""
+                document.getElementById('t2').value=""
+                document.getElementById('t3').value=""
+            }
+        </script>
+    </body>
+</html>

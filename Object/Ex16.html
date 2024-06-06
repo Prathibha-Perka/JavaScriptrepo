@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> JS Objects: Intro to this Keyword</title>
+    </head>
+    <body>
+        <script>
+            let student={
+                id : 101,
+            name : "prathibha",
+        show : function(){
+            console.log(`${this.id} id name is ${this.name}`)
+        } 
+               };
+               student.show();
+               let Employee={
+                id : 105,
+            name : "Sony",
+        show : function(){
+            console.log(`${this.id} id name is ${this.name}`)
+        } 
+               };
+               Employee.show();
+
+        </script>
+    </body>
+</html>

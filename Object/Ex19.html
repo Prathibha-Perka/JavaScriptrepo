@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> JS Objects : call()</title>
+    </head>
+    <body>
+        <script>
+         let   show = function(age,city,gender){
+            console.log(`${this.id} id name is ${this.name} age=${age} city=${city} gender=${gender}`)
+        } 
+            let student={
+                id : 101,
+            name : "prathibha",
+               };
+       
+               let Employee={
+                id : 105,
+            name : "Sony",
+               };
+              let newStudent= show.bind(student);
+              newStudent(23,'hyd','Female')
+              let newEmployee= show.bind(Employee);
+              newEmployee(25,'nzb','Female')
+               
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Simple interest</title>
+    </head>
+    <body>
+        <label> P</label>
+        <input type="text" id="p1">
+        <br>
+        <br>
+        <label> T</label>
+        <input type="text" id="p2">
+        <br><br>
+        <label> R</label>
+        <input type="text" id="p3">
+        <br><br>
+        <button onclick="Interest()">SimpleInterest</button>
+        <input type="text" id="p4">
+        <script>
+            function Interest(){
+                let p=eval(document.getElementById('p1').value)
+                let t=eval(document.getElementById('p2').value)
+                let r=eval(document.getElementById('p3').value)
+                let result=(p*t*r)/100;
+                let simpleinterest=document.getElementById('p4').value=result
+            }
+            </script>
+
+    </body>
+</html>

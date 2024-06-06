@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> cube </title>
+    </head>
+    <body>
+        <input type="text" id="t1">
+        <input type="text" id="t2">
+        <button onclick="abCube()"> (a+b^3)</button>
+        <input type="text" id="t3">
+        <script>
+             function abCube()
+            {
+                let a=eval(document.getElementById('t1').value)
+                let b=eval(document.getElementById('t1').value)
+                let result = ( a*a*a) + (b*b*b)+ (3*a*a*b)+(3*a*b*b)
+                let c=document.getElementById('t3').value=result
+            }
+        </script>
+    </body>
+</html>

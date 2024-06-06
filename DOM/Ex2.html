@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DOM Example </title>
+    </head>
+    <body>
+        <input type="text" id="t1" value="100">
+        <input type="text" id="t2" value="200">
+        <!-- <input type="button" value="+"> -->
+        <!-- OR -->
+        <button onclick="dosum()"> +</button>
+        <button onclick="abSquare()"> (a+b^2)</button>
+        <button onclick="eraseDate()">Clear</button>
+        <input type="text" id="t3">
+        <!-- DOM manipulation -->
+        <script>
+            function dosum(){
+            let x=document.getElementById('t1').value
+            let y=document.getElementById('t2').value
+            let sum=eval(x)+eval(y);
+            let z=document.getElementById('t3').value=sum
+            }
+            function abSquare()
+            {
+                let a=eval(document.getElementById('t1').value)
+                let b=eval(document.getElementById('t1').value)
+                let result = ( a*a) + (b*b)+ (2*a*b)
+                let c=document.getElementById('t3').value=result
+            }
+            function eraseDate(){
+                document.getElementById('t1').value=""
+                document.getElementById('t2').value=""
+                document.getElementById('t3').value=""
+            }
+        </script>
+    </body>
+</html>

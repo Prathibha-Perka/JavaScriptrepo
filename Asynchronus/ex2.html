@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            //asynch programming example : callback(level1)
+            function one(){
+                console.log("welcome to my app")
+            }
+            function two(){
+                console.log("thanks for using this app")
+            }
+            function addition( x,n1,n2,n3,y){
+                x()
+            console.log(`sum of ${n1},${n2} and ${n3} is : ${n1+n2+n3}`);
+       y()
+        }
+            addition(one , 1,2,3, two)
+        </script>
+    </body>
+</html>

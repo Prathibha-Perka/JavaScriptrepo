@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function validateform(){
+                if(document.getElementById('c1').checked == false && document.getElementById('c2').checked == false && document.getElementById('c3').checked == false)
+                {
+                alert("Please select Language");
+            return false;
+            }
+        }
+        </script>
+    </head>
+    <body>
+        <form action="abc.jsp" name="f1" onsubmit="return validateform()">
+            <label> know language</label>
+            <input type="checkbox" name="language" id="c1" value="telugu">Telugu
+            <input type="checkbox" name="language" id="c2" value="hindi">Hindi
+            <input type="checkbox" name="language" id="c3" value="english">english <br>
+            <input type="submit" value="validate">
+        </form>
+    </body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Mouse : click and dbclick </title>
+    </head>
+    <script>
+        function fun1()
+        {
+            let fname = document.getElementById('p1').value
+            let lname= document.getElementById('p2').value
+            let msg =`Your name is : ` +fname+" " +lname
+            alert(msg)
+        }
+    </script>
+    <body>
+        Enter your first name : <input type="text" id="p1"><br>
+        Enter your last name : <input type="text" id="p2"><br>
+        <button onclick="fun1()"> Show FullName</button>
+    </body>
+</html>

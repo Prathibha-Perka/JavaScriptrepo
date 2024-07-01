@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Key : keyup,keydown,press</title>
+        <style>
+
+        </style>
+        <script>
+function fun1(){
+    let c = document.getElementById('t1').value
+    document.getElementById('s1').innerHTML=c
+}
+   function fun2(){
+    let d = document.getElementById('t1').value
+    document.getElementById('s1').innerHTML=d
+    }
+   function fun3(){
+    let e = document.getElementById('t1').value
+    document.getElementById('s1').innerHTML=e
+    }
+
+        </script>
+    </head>
+    <body>
+        Enter your name : <input type="text" id="t1" onkeypress="fun1()" onkeydown="fun2()" onkeyup="fun3()">
+        <br><br>
+        Your Name is : <span id="s1" ></span>
+    </body>
+
+</html>

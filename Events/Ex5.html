@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Form : Submit and Reset</title>
+    </head>
+    <style>
+ div ,span{color: red;}
+    </style>
+    <script>
+        function fun1(){
+            let user = document.getElementById('id1').value
+            let password = document.getElementById('id2').value
+            //validations : sending proper entry of data in the form
+            // validations1 : text field validations
+            if( user =="")
+            {
+                //approach 1 usring alert
+                //alert("userId should not be empty");
+                //approach 2 using span
+               // document.getElementById('s1').innerHTML=" * userId should not be empty"
+               //approach 3 using div
+               document.getElementById('d1').innerHTML=" * userId should not be empty"
+                return false
+            }
+            if( password =="")
+            {
+                //approach 1 usring alert
+                //alert("password should not be empty");
+                //document.getElementById('s2').innerHTML=" * password should not be empty"
+                  //approach 3 using div
+               document.getElementById('d2').innerHTML=" * userId should not be empty"
+                return false
+            }else
+            {
+               // let msg = ` hey ${user} your password is ${password}`;
+               alert("Data is valid")
+                alert(msg)
+                return true
+            } 
+        }
+        function fun2(){
+          let result= confirm("are you sure to delete") 
+          if(result){
+            return true;
+          }else{
+            return false;
+          }
+        }
+    </script>
+    <body>
+        <form  name="f1" action="ServerPage1" method="get" onsubmit=" return fun1()" onreset="return fun2()">
+            <table align="center">
+                <tr>
+                    <td>
+                        <label for="id1"> Enter your UserId</label>
+                    </td>
+                    <td>
+                        <input type="text" id="id1" name="n">
+                        <span id="s1">*</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="id2"> Enter Your Password</label>
+                    </td>
+                    <td>
+                        <input type="password" id="id2" name="n1">
+                        <span id="s2">*</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" value="SignIn">
+                    </td>
+                    <td>
+                        <input type="reset" value="Clear">
+                    </td>
+                </tr>
+                <tr><td>
+                    <div id="d1"> </div>
+                    <div id="d2"> </div>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Form : Submit and Reset</title>
+</head>
+<style>
+    #s1{
+        color: red;
+    }
+    #s2 { color: blue;}
+</style>
+<script>
+    function fun1(){
+
+        try {
+            let age = document.getElementById('id1').value
+            if(age == ""){
+                throw new Error("Age should not be empty");
+            }
+            if(isNaN(age)){
+                throw new Error("Age should be a number")
+            }
+            if(age<0){
+                throw new Error("Age should be a  positive number")
+            }
+            if(age<18){
+                throw new Error("Not eligible for voiting")
+            }
+            if(age>100){
+                throw new Error("Age should not be greater than 100")
+            }
+            else if (age > 18) {
+                alert("your age is valid for voting")
+                return true
+            }
+        }
+        catch (error){
+            document.getElementById('s1').innerHTML=error.message
+            return false;
+        }
+        finally {
+            document.getElementById('s2').innerHTML = "Thanks for using this application"
+
+        }
+    }
+</script>
+
+<body>
+    <form name="f1" action="ServerPage1" method="get" onsubmit=" return fun1()">
+        <table align="center">
+            <tr>
+                <td>
+                    <label for="id1"> Enter your Age</label>
+                </td>
+                <td>
+                    <input type="text" id="id1" name="n">
+                    <span id="s1">*</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" value="Validate Age">
+                    <span id="s2"></span>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>

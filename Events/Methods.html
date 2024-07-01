@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Method of document object </title>
+    </head>
+    <body>
+        <p class="c1"> A </p>
+        <p class="c1"> B </p>
+        <p class="c1"> C </p>
+        <p id="p1"> D </p>
+        <p id="p2"> E </p>
+        <input type="text" name="n1" value="F">
+        <br>
+        <input type="text" name="n1" value="G">
+        <script>
+            document.write("Apple")
+            document.write(" Banana");
+            document.write("<br>")
+            document.writeln("Hello World <br>")
+            document.writeln("Have a nice Day! <br>")
+            document.getElementById('p1').innerHTML="Dog"
+            document.getElementsByName('n1')[0].value='Fish'
+              document.getElementsByName('n1')[1].value='Goat'
+              document.getElementsByClassName('c1')[0].innerHTML='Apple'
+              document.getElementsByClassName('c1')[1].innerHTML='Banana'
+              document.getElementsByTagName('p')[4].innerHTML='Egg'
+        </script>
+    </body>
+</html>

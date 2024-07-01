@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            //asynch programming example : callback(level3) 
+           
+            function addition( callback,n1,n2,n3){
+                callback()
+            console.log(`sum of ${n1},${n2} and ${n3} is : ${n1+n2+n3}`);
+        }
+         
+        addition(()=>{console.log("Hi");} , 1,2,3 )
+        let  ar =[1,2,3]
+         let newAr =ar.filter(     (e)=> {e%2==0}  );
+         console.log(newAr);
+        </script>
+    </body>
+</html>
